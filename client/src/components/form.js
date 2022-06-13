@@ -3,14 +3,15 @@ import ActionButton from "./button";
 import TextInput from "./textInput";
 
 export default function Form() {
-    const [list, setlist] = useState({text:""});
+    const [list, setList] = useState({text:""});
     function formSubmit(e){
-
+        e.preventDefault();
+        // createList()
     }
     return (
         <>
             <form onSubmit={formSubmit} className="input-group mt-5" >
-                    <TextInput />
+                    <input type="text" onChange={(e)=>{setList({text:e.target.value})}} value={list.text} />
                     <ActionButton color="primary" size="sm" value="Submit" type="submit" />
             </form>
         </>
