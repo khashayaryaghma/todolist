@@ -1,13 +1,13 @@
 import { useState } from "react";
 import ActionButton from "./button";
-import TextInput from "./textInput";
+// import TextInput from "./textInput";
 import { createList } from "../api/listApi";
 
 export default function Form() {
     const [list, setList] = useState({text:""});
     function formSubmit(e){
         e.preventDefault();
-        createList()
+        createList(list)
     }
     return (
         <>
