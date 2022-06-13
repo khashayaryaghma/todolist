@@ -1,9 +1,9 @@
 import axios from "axios"
 
-const baseUrl = ""
-export const createList = async (course) => {
+const baseUrl = "http://localhost:5000/list"
+export const createList = async (list) => {
     try {
-        await axios.post(baseUrl, course);
+        await axios.post(baseUrl, list);
     } catch (error) {
         console.log(error);
     }
