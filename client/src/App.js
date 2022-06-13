@@ -1,5 +1,6 @@
 import ActionButton from "./components/button";
-import TextInput from "./components/textInput";
+
+import Form from "./components/form";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
           {/* <ActionButton value="Edit" color="warning" size="sm" />
           <ActionButton value="Delete" color="danger" size="sm" /> */}
           {/* <TextInput/> */}
+          <Form/>
       </div>
   );
 }
