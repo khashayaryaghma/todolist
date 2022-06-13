@@ -5,9 +5,10 @@ import { createList } from "../api/listApi";
 
 export default function Form() {
     const [list, setList] = useState({text:""});
+
     function formSubmit(e){
         e.preventDefault();
-        createList(list)
+        createList(list);
     }
     return (
         <>
