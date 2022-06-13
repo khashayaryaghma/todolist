@@ -1,9 +1,10 @@
 
 
 function TextInput() {
+
     return (
     <>
-    <input type="text" />
+    <input type="text"  />
     </>
     );
 }
