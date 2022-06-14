@@ -9,7 +9,7 @@ export default function List() {
 
     useEffect(() => {
         getAllLists().then(({ data }) => setList(data.lists));
-    });
+    },[]);
 
     return <div>{lists && <Lists listData={lists} />}</div>;
     

@@ -6,7 +6,7 @@ export default function Form() {
     const [list, setList] = useState({text:""});
 
     function formSubmit(e){
-        e.preventDefault();
+        // e.preventDefault();
         createList(list);
     }
     return (
