@@ -1,3 +1,22 @@
 const router = require("express").Router();
 
-router.get("/",)
+
+const {
+    getAllList,
+    getList,
+    createList,
+    updateList,
+    deleteList,
+} = require("../controllers/list");
+
+
+router.get("/", getAllList);
+router.get("/:id", getList);
+
+router.post("/", createList);
+
+router.patch("/:id", updateList);
+
+router.delete("/:id", deleteList);
+
+module.exports = router;
