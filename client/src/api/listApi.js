@@ -1,6 +1,16 @@
 import axios from "axios"
 
 const baseUrl = "http://localhost:5000/list"
+
+export const getLists = async () => {
+    try {
+        const lists = await axios.get(baseUrl);
+        return lists;
+    } catch (error) {
+        console.log(error);
+    }
+};
+
 export const createList = async (list) => {
     try {
         await axios.post(baseUrl, list);
