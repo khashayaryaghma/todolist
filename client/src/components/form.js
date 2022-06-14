@@ -11,7 +11,7 @@ export default function Form() {
     }
     return (
         <>
-            <form onSubmit={formSubmit} className="input-group mt-5" style={{marginLeft: "38rem"}} >
+            <form onSubmit={formSubmit} className="input-group mt-5 mb-4" style={{display:"flex", justifyContent:"center"}}>
                     <input type="text" onChange={(e)=>{setList({text:e.target.value})}} value={list.text} />
                     <ActionButton color="primary" size="sm" value="Submit" type="submit" />
             </form>
