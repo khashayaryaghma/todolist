@@ -9,7 +9,7 @@ export default function list() {
 
     useEffect(() => {
 
-    getAllList().then(({ data }) => setList(data.courses));
+    getAllList().then(({ data }) => setList(data.list));
 }, []);
 
   return (
