@@ -1,6 +1,5 @@
 import { useState } from "react";
 import ActionButton from "./button";
-// import TextInput from "./textInput";
 import { createList } from "../api/listApi";
 
 export default function Form() {
