@@ -2,7 +2,7 @@ import axios from "axios"
 
 const baseUrl = "http://localhost:5000/list"
 
-export const getLists = async () => {
+export const getAllLists = async () => {
     try {
         const lists = await axios.get(baseUrl);
         return lists;
