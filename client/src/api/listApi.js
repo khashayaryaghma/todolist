@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const baseUrl = "http://localhost:5000/list"
+const baseUrl = "http://localhost:5000/list";
 
 export const getAllLists = async () => {
     try {

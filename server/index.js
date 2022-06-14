@@ -2,11 +2,13 @@ const express = require('express');
 const dotenv = require("dotenv");
 const connectDB = require("./db/connect");
 const list = require("./routes/list.routes");
-
+const cors = require("cors");
 
 dotenv.config();
-const app = express()
-
+const app = express();
+app.use(express.json());
+// app.use(express.urlencoded({ extended: true }));
+app.use(cors());
 // const listRouter = require("./routes/list.routes")
 
 app.use("/list",list);

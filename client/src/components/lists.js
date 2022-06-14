@@ -1,7 +1,14 @@
 import React from 'react'
 
-export default function Lists() {
+export default function Lists({listData}) {
+
   return (
-    <div>lists</div>
+    <div>
+        <ul>
+            {listData?.map((text)=>{
+                return <li>{text}</li>
+            })}
+        </ul>
+    </div>
   )
 }
