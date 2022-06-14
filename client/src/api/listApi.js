@@ -5,7 +5,7 @@ export const createList = async (list) => {
     try {
         await axios.post(baseUrl, list);
     } catch (error) {
-        console.log(error);
+        console.log(error,"hi");
     }
 };
 
