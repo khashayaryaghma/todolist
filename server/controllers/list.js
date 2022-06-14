@@ -71,3 +71,13 @@ const deleteList = async (req, res) => {
         res.status(500).json({ msg: error });
     }
 };
+
+
+
+module.exports = {
+    getAllList,
+    getList,
+    createList,
+    updateList,
+    deleteList,
+};
