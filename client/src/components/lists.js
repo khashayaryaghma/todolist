@@ -27,12 +27,12 @@ export default function Lists({listData}) {
                             <ActionButton
                                 value="Edit"
                                 size="sm"
-                                variant="primary"
+                                color="primary"
                             />
                             <ActionButton
                                 value="Delete"
                                 size="sm"
-                                variant="danger"
+                                color="danger"
                             />
                         </div>
                     </li>
