@@ -1,7 +1,7 @@
 const express = require('express');
 const dotenv = require("dotenv");
 const connectDB = require("./db/connect");
-
+const list = require("./routes/list.routes");
 
 
 dotenv.config();
@@ -9,7 +9,7 @@ const app = express()
 
 // const listRouter = require("./routes/list.routes")
 
-// app.use("/list",listRouter);
+app.use("/list",list);
 
 app.get('/', (req, res) => res.send('Hello World!'));
 
