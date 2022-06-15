@@ -8,7 +8,7 @@ export default function List() {
     const [lists, setList] = useState([]);
 
     useEffect(() => {
-        getAllLists().then(({ data }) => setList(data.lists));
+        getAllLists().then(({ data }) => setList(data));
     },[]);
 
     return <div>{lists && <Lists listData={lists} />}</div>;

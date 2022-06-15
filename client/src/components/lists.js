@@ -4,7 +4,8 @@ import { deleteList,editList } from "../api/listApi";
 
 export default function Lists({listData}) {
   function editTask(id){
-    editList(id)
+    editList(id,listData);
+    // window.location.reload();
   }
   function deleteTask(id){
     deleteList(id);
