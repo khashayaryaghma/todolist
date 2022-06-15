@@ -3,8 +3,9 @@ import ActionButton from './button';
 import { deleteList,editList } from "../api/listApi";
 
 export default function Lists({listData}) {
+    
   function editTask(id){
-    editList(id,listData);
+    editList(id,{text:"hi"});
     // window.location.reload();
   }
   function deleteTask(id){

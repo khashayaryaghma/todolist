@@ -29,7 +29,7 @@ export const deleteList = async (id) => {
 
 export const editList = async (id, list) => {
     try {
-        await axios.patch(`${baseUrl}/${id}`, list);
+        await axios.put(`${baseUrl}/${id}`, list);
     } catch (error) {
         console.log(error);
     }
