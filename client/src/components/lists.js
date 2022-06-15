@@ -1,8 +1,16 @@
 import React from 'react'
 import ActionButton from './button';
+import { deleteList,editList } from "../api/listApi";
 
 export default function Lists({listData}) {
-  console.log(listData);
+  function editTask(id){
+    editList(id)
+  }
+  function deleteTask(id){
+    deleteList(id);
+    window.location.reload();
+  }
+
   return (
     <>
         <ul>
@@ -28,11 +36,13 @@ export default function Lists({listData}) {
                                 value="Edit"
                                 size="sm"
                                 color="primary"
+                                click={() => editTask(ele._id)}
                             />
                             <ActionButton
                                 value="Delete"
                                 size="sm"
                                 color="danger"
+                                click={() => deleteTask(ele._id)}
                             />
                         </div>
                     </li>
