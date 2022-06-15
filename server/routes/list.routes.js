@@ -11,11 +11,12 @@ const {
 
 
 router.get("/", getAllList);
+
 router.get("/:id", getList);
 
 router.post("/", createList);
 
-router.patch("/:id", updateList);
+router.put("/:id", updateList);
 
 router.delete("/:id", deleteList);
 
